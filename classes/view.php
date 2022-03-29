@@ -2,10 +2,11 @@
 class View{
     //path to template
     private $path = 'templates';
-    //template name
-    private $template = 'default';
 
-    // this will contain variables to be embedded in the template
+    //default template name
+    private $template = 'encrypt';
+
+    // this will contain values to be embedded in the template
     private $_ = array();
 
     //add a key-value pair to aray _
@@ -14,7 +15,7 @@ class View{
     }
 
     //sets a template by name
-    public function setTemplate($template = 'default'){
+    public function setTemplate($template = 'encrypt'){
         $this->template = $template;
     }
 
