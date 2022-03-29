@@ -5,7 +5,7 @@ class Controller{
 
     public function __construct($request){
         $this->request = $request;
-        $this->template = !empty($request['view'])? $request['view'] : 'encrypt';
+        $this->template = !empty($request['mode'])? $request['mode'] : 'encrypt';
     }
 
     public function display(){

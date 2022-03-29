@@ -5,7 +5,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 ?>
 
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"] . '?view=decrypt'); ?>" method="POST">
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"] . '?mode=decrypt'); ?>" method="POST">
     <h1>Decrypt a message</h1>
     <label class='textbox-label'>Message</label>
     <textarea id='message' name='message'></textarea>
