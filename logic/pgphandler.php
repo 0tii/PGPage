@@ -1,4 +1,7 @@
 <?php
+
+//TODO functions not class
+
 class PgpHandler{
     private $pgp = new gnupg();
 
